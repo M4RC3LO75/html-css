@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+        /*
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial {
+            background-color: darkred;
+            color: white;
+        }
+        .especial::before{
+            content: '→ ';
+        }
+        .especial::after{
+            content: ' ←';
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://github.com/M4RC3LO75" target="_blank">Repositório Github</a></li>
+        <li><a href="https://www.facebook.com/marcelo.bastos.9843/" class="especial" target="_blank" >Facebook</a></li>
+        <li><a href="https://www.linkedin.com/in/M4RC3LO/" target="_blank">LinkedIn</a></li>
+    </ul>
+</body>
+</html>
