@@ -5,9 +5,22 @@
     padding: 0px;
 }
 
-div{
-    background-image: url(../imagens/astronauta.png);
+#background{
+    background-image: url(../imagens/espaco.jpg);
+    position: relative;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center, center;
-    max-width: 1000px;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#astronauta{
+    background-image: url('../imagens/astronauta.png');
+    background-size: contain;
+    position: absolute;
+    height: 500px;
+    width: 500px;
 }
