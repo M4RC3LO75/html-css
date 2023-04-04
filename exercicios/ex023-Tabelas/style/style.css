@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+table {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    border-collapse: collapse;
+    border: 2px solid darkred;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.numero {
+    text-align: right;
+}
